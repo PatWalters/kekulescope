@@ -35,6 +35,7 @@ def generate_images(sdf_name):
             pIC50_list.append(pIC50)
     return img_list, pIC50_list
 
+
 def build_model(input_sdf):
     print(f"Running {input_sdf}")
     EPOCHS = 100
