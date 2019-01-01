@@ -41,7 +41,7 @@ def build_model(input_sdf):
     EPOCHS = 100
     CV_CYCLES = 10
     output_csv = input_sdf.replace(".sdf", "_ks.csv")
-    img_list, pIC50_list = generate_images(sys.argv[1])
+    img_list, pIC50_list = generate_images(input_sdf)
 
     workers = multiprocessing.cpu_count()
 
